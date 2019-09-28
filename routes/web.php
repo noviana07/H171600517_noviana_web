@@ -27,3 +27,5 @@ Route::get('/artikel','ArtikelController@index')->name('artikel.index');
 Route::get('/berita','BeritaController@index')->name('berita.index');
 Route::get('/galeri','GaleriController@index')->name('galeri.index');
 Route::get('/pengumuman','PengumumanController@index')->name('pengumuman.index');
+Route::get('/kategori_artikel/{id}','KategoriArtikelController@show')->name('kategori_artikel.show');
+Route::get('/kategori_berita/{id}','KategoriBeritaController@show')->name('kategori_berita.show');
