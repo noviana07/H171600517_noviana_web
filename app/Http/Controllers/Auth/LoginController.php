@@ -20,7 +20,7 @@ class LoginController extends Controller
     protected function validator(request $request)
     {
         $request->validator([
-            $this->username()=>'required|string', 'password'=> 'required|string',
+            $this->username()=>'required|string', 'password'=> 'required|string','captcha'=> 'required|captcha'
 
 
         ]);
