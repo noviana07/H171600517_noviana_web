@@ -8,16 +8,18 @@
                 <div class="card-header">Tambah Artikel</div>
 
                     <div class="card-body">
-                        <form method="post" action="{!! route('artikel.store') !!}">
+                         {!! Form::open(['route' => 'artikel.store', 'method' => 'post']) !!}
                             @include('artikel.form')
+                       {!! Form::close() !!}
+                            
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-@endsection
 
+@endsection
 @section('scripts')
 
 <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
